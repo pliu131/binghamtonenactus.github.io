@@ -5,3 +5,12 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.home-page-container {
+  margin: 0 auto;
+}
+
+svg {
+  height: 25%;
+  width: 25%;
+}
