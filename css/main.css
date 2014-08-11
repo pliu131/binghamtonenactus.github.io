@@ -15,6 +15,13 @@ html {
   z-index: -1 !important;
   background-color: rgba(0,0,0,0.3);
 }
+#enactus-logo-image-box {
+  background-image: url(../assets/enactus_logo_white.svg); 
+  background-position: center; 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  height: 400px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
