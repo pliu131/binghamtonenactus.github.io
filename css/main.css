@@ -1,10 +1,19 @@
 html {  
-  background: url(https://s3.amazonaws.com/ooomf-com-files/kIlSDateSiyn420ZmgjA_IMG_3768.JPG) no-repeat center center fixed;
+  background: url(../assets/binghamton_downtown_bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Source Sans Pro', sans-serif;
+}
+.overlay {
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: -1 !important;
+  background-color: rgba(0,0,0,0.3);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,7 +52,7 @@ em {
 }
 
 .clear input[type="submit"] {
-  width: 304px;
+  width: 302px;
   background-color: #1abc9c;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -51,4 +60,11 @@ em {
   font-size: 1em;
   cursor: pointer;
   border: none;
+}
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  color: #f39c12;
 }
