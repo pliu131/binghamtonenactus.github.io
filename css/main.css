@@ -1,4 +1,4 @@
-html {
+html {  
   background: url(https://s3.amazonaws.com/ooomf-com-files/kIlSDateSiyn420ZmgjA_IMG_3768.JPG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -25,4 +25,29 @@ em {
 
 .home-page-container {
   margin: 0 auto;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mc-field-group input[type="email"] {
+  width: 350px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 1em;
+  margin: 0;
+  border: none;
+}
+
+.clear input[type="submit"] {
+  width: 352px;
+  background-color: #1abc9c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
 }
