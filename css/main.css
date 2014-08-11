@@ -24,15 +24,16 @@ em {
 }
 
 .home-page-container {
-  margin: 0 auto;
+  margin: auto auto;
   position: relative;
   top: 50%;
   text-align: center;
   vertical-align: middle;
+  margin-top: 3%;
 }
 
 .mc-field-group input[type="email"] {
-  width: 350px;
+  width: 300px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
@@ -42,7 +43,7 @@ em {
 }
 
 .clear input[type="submit"] {
-  width: 352px;
+  width: 304px;
   background-color: #1abc9c;
   padding-top: 15px;
   padding-bottom: 15px;
