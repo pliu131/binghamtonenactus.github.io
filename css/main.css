@@ -1,13 +1,10 @@
-html {  
-  background: url(../assets/binghamton_downtown_bg.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+html {
   font-family: 'Source Sans Pro', sans-serif;
   height: 100%;
+}
+
+body {
+  margin-top: 50px;
 }
 .overlay {
   height:100%;
