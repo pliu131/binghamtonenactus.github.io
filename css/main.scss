@@ -1,3 +1,12 @@
+// Base Styles
+@import "base/globals";
+@import "base/mixins";
+
+// Application Styles
+@import "application/layout";
+@import "application/colors";
+@import "application/typography";
+
 html {
   font-family: 'Source Sans Pro', sans-serif;
   height: 100%;
@@ -6,6 +15,7 @@ html {
 body {
   margin-top: 50px;
 }
+
 .overlay {
   height:100%;
   width:100%;
@@ -15,6 +25,7 @@ body {
   z-index: -1 !important;
   background-color: rgba(0,0,0,0.3);
 }
+
 #enactus-logo-image-box {
   background-image: url(../assets/enactus_logo_white.svg); 
   background-position: center; 
@@ -22,13 +33,13 @@ body {
   background-repeat: no-repeat; 
   height: 400px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: bold;
 }
 
-
-h4, h5, h6, p {
+p {
   font-style: normal;
   font-weight: 300;
 }
