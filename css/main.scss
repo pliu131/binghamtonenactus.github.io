@@ -2,10 +2,10 @@
 ---
 
 // Base Styles
-@import "base/globals";
 @import "base/mixins";
+@import "base/globals";
 
 // Application Styles
-@import "application/layout";
 @import "application/colors";
+@import "application/layout";
 @import "application/typography";

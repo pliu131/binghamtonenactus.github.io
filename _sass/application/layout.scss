@@ -30,3 +30,44 @@ footer.footer {
   z-index: -1 !important;
   background-color: rgba(0,0,0,0.3);
 }
+
+// Navbar Styles
+.navbar.navbar-default.navbar-fixed-top {
+  background-color: $enactus_gray;
+
+  .container {
+    .navbar-header {
+      .navbar-brand {
+        height: auto;
+
+        img {
+          display: inline-block;
+          height: 6.25rem;
+        }
+      }
+
+      .navbar-toggle {
+        margin-top: 3.0625rem;
+        margin-right: 1.875rem;
+      }
+    }
+
+    .navbar-nav {
+      margin-top: 1.875rem;
+
+      li {
+        margin: 0.625rem;
+
+        a {
+          color: white;
+          @include transition;
+        }
+
+        a:hover, a:focus, a:active {
+          color: $enactus_dark_gray;
+          background-color: $enactus_gold;
+        }
+      }
+    }
+  }
+}

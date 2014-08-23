@@ -21,9 +21,10 @@ em {
 }
 
 a {
-  color: #3498db;
+  color: $enactus_blue;
   text-decoration: none;
 }
+
 a:hover, a:focus, a:active {
-  color: #f39c12;
+  color: $enactus_gold;
 }
