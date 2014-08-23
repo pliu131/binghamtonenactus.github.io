@@ -1,0 +1,21 @@
+// Mailchimp Signup Group Inputs
+.mc-field-group input[type="email"] {
+  width: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 1em;
+  margin: 0;
+  border: none;
+}
+
+.clear input[type="submit"] {
+  width: 302px;
+  background-color: #1abc9c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+}

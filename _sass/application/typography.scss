@@ -1,5 +1,10 @@
 $font-stack: 'Source Sans Pro', sans-serif;
 
+html, body {
+  font-family: $font-stack;
+  font-size: 100%; // 16px on most browsers
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: bold;
@@ -13,4 +18,12 @@ p {
 em {
   font-weight: 300;
   font-style: italic;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  color: #f39c12;
 }
