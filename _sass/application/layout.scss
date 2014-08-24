@@ -5,8 +5,6 @@ html {
 }
 
 body {
-  // Margin top by header height
-  margin-top: 50px;
   /* Margin bottom by footer height */
   margin-bottom: 100px;
 }
@@ -17,7 +15,7 @@ footer.footer {
   margin-bottom: 0; 
   width: 100%;
   height: 100px;
-  background-color: #f5f5f5;
+  background-color: $enactus_gray;
 }
 
 // Overlay for any images that need them
@@ -32,8 +30,9 @@ footer.footer {
 }
 
 // Navbar Styles
-.navbar.navbar-default.navbar-fixed-top {
+.navbar.navbar-default {
   background-color: $enactus_gray;
+  border-radius: 0;
 
   .container {
     .navbar-header {
