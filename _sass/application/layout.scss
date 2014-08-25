@@ -127,6 +127,16 @@ footer.footer {
   background-color: rgba(0,0,0,0.3);
 }
 
+.header_overlay {
+  position: absolute;
+  height: 31.25rem;
+  width: 100%;
+  top: 130px;
+  left: 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.5);
+}
+
 // Navbar Styles
 .navbar.navbar-default {
   background-color: $enactus_gray;
