@@ -138,10 +138,20 @@ $enactus_blue: #0397d6;
 
 #home_content_container {
   .row {
-    margin-top: 3.125rem;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+
+  .row:first-child {
+    background-color: $enactus_gray;
+    color: white;
+
+    img {
+      margin-top: -2.1875rem;
+    }
   }
   .row:last-child {
-    margin-bottom: 3.125rem;
+    padding-bottom: 3.125rem;
   }
   p {
     font-size: 1.5rem;
