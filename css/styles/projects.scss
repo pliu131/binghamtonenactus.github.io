@@ -1,13 +1,114 @@
 ---
 ---
+$enactus_gold: #ffc222;
+$enactus_gray: #515356;
+$enactus_dark_gray: #4c4c4c;
+$enactus_darker_gray: #444;
+$enactus_lighter_gray: #f3f3f3;
+$enactus_light_gray: #6d6d6e;
+$enactus_blue: #0397d6;
+
+@mixin transition($transition-property: all, 
+  $transition-length: 0.3s, 
+  $transition-function: ease-in ) {
+  -webkit-transition: $transition-property $transition-length $transition-function;
+  -moz-transition: $transition-property $transition-length $transition-function;
+  -o-transition: $transition-property $transition-length $transition-function;
+  -ms-transition: $transition-property $transition-length $transition-function;
+  transition: $transition-property $transition-length $transition-function;
+}
 
 .project_container {
 
   .row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     p {
       font-size: 1.5rem !important;
+
+      span {
+        color: $enactus_gold;
+        font-weight: 400;
+      }
     }
   }
 
-  .project_description{}
+  .project_description {}
+  .project_action {
+    background-color: $enactus_gold;
+    color: white;
+  }
+
+  .project_output {
+    background-color: $enactus_lighter_gray;
+  }
+}
+
+
+.project_people_container {
+  background-color: $enactus_blue;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .project_leader_row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .project_leader_info {
+      top: 35px;
+      position: relative;
+    }
+  }
+
+  .project_members_row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    h3 {
+      margin-top: 10px;
+    }
+
+  }
+}
+
+
+.project_contact_container {
+  background-color: $enactus_darker_gray;
+  color: white;
+
+  .row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1 {
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      @include transition;
+      background-color: transparent;
+      border-radius: 3px;
+      border: 2px solid $enactus_gold;
+      color: $enactus_gold;
+    }
+
+    .btn:hover, .btn:active, .btn:focus {
+      background-color: $enactus_gold;
+      color: white;
+    }
+
+  }
 }
