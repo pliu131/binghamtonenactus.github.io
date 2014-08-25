@@ -1,0 +1,19 @@
+.halign_element {
+  margin: 0 auto;
+}
+
+/* Vertically Aligning Containers */
+.valign_container {
+  display: table;
+}
+
+.valign_element {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.valign_text {
+  position: relative;
+  top: 50%;
+  @include translateY;
+}

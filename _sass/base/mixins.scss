@@ -1,0 +1,46 @@
+@mixin transition($transition-property: all, 
+  $transition-length: 0.3s, 
+  $transition-function: ease-in ) {
+  -webkit-transition: $transition-property $transition-length $transition-function;
+  -moz-transition: $transition-property $transition-length $transition-function;
+  -o-transition: $transition-property $transition-length $transition-function;
+  -ms-transition: $transition-property $transition-length $transition-function;
+  transition: $transition-property $transition-length $transition-function;
+}
+
+@mixin translateY($translate-height: -50%) {
+  -webkit-transform: translateY($translate-height);
+  -moz-transform: translateY($translate-height);
+  -o-transform: translateY($translate-height);
+  -ms-transform: translateY($translate-height);
+  transform: translateY($translate-height);
+}
+
+@mixin border_box {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+// Keyframes
+@mixin keyframe($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  
+  @-moz-keyframes $animation-name {
+    @content;
+  }
+  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  
+  @-o-keyframes $animation-name {
+    @content;
+  }
+  
+  @keyframes $animation-name {
+    @content;
+  }
+}

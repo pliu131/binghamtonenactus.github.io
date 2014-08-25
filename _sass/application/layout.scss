@@ -1,0 +1,182 @@
+html {
+  // These styles fix the sticky footer issue
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
+
+@mixin footer_border {
+  border-right: 1px solid $enactus_light_gray;
+}
+
+footer.footer {
+  position: absolute;
+  /* for some reason, this works and not bottom 0 */
+  margin-bottom: 0; 
+  width: 100%;
+  background-color: $enactus_gray;
+  color: $enactus_footer_light_gray;
+  font-size: 0.875rem;
+
+  .container {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem; 
+
+    .row {
+      h3 {
+        font-weight: 400;
+        color: white;
+        margin-bottom: 1.875rem; 
+        margin-top: 2rem;
+        padding-left: 15px;
+      }
+
+      .col-md-3 {
+        min-height: 22.5rem;
+        @include footer_border;
+      }
+
+      #footer_description {
+        img {
+          margin-left: -1.4375rem;
+          margin-bottom: 1.875rem;
+          max-height: 3.75rem;
+        }
+
+
+        strong {
+          color: white;
+
+          span {
+            color: $enactus_gold;
+          }
+        }
+      }
+
+      #footer_social {
+        ul {
+          padding-left: 2.25rem;
+
+          li {
+            list-style-type: none;
+            margin-bottom: 0.625rem;
+            vertical-align: middle;
+
+
+            a {
+              @include transition;
+              color: $enactus_footer_light_gray;
+
+              [class*="icon-"] {
+                font-size: 1.5625rem;
+                padding-right: 0.3125rem;
+              }
+
+              // This is an important CSS selector to learn
+              [class*="icon-"]:after {
+                position: relative;
+                top: -6px;
+                left: 8px;
+                font-size: 0.875rem;
+                font-weight: 400;
+                font-family: 'Source Sans Pro', sans-serif;
+              }
+
+              .icon-facebook-circled:after {
+                content: "Facebook";
+              }
+              .icon-twitter-circled:after {
+                content: "Twitter";
+              }
+              .icon-flickr-circled:after {
+                content: "Flickr";
+              }
+              .icon-pinterest-circled:after {
+                content: "Pinterest";
+              }
+              .icon-linkedin-circled:after {
+                content: "LinkedIn";
+              }
+            }
+
+            a:hover, a:focus, a:active {
+              color: $enactus_gold;
+              text-decoration: none;
+            }
+          }
+        }
+        
+      }
+      #footer_contact {}
+    }
+  }
+}
+
+// Overlay for any images that need them
+.overlay {
+  height:100%;
+  width:100%;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: -1 !important;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.header_overlay {
+  position: absolute;
+  height: 31.25rem;
+  width: 100%;
+  top: 130px;
+  left: 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.5);
+}
+
+// Navbar Styles
+.navbar.navbar-default {
+  background-color: $enactus_gray;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+
+  .container {
+    .navbar-header {
+      .navbar-brand {
+        height: auto;
+
+        img {
+          display: inline-block;
+          height: 6.25rem;
+        }
+      }
+
+      .navbar-toggle {
+        margin-top: 3.0625rem;
+        margin-right: 1.875rem;
+      }
+    }
+
+    .navbar-nav {
+      margin-top: 1.875rem;
+
+      li {
+        margin: 0.625rem;
+
+        a {
+          color: white;
+          @include transition;
+        }
+
+        a:hover, a:focus, a:active {
+          color: $enactus_dark_gray;
+          background-color: $enactus_gold;
+        }
+      }
+    }
+  }
+}

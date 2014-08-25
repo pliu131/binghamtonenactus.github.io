@@ -1,0 +1,15 @@
+.container {
+  .row {
+    #contact_tagline_col {}
+    #contact_form_col {
+      #contact_form {
+        padding: 15px;
+
+        .form-control {}
+        textarea {
+          resize: none;
+        }
+      }
+    }
+  }
+}
