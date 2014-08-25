@@ -135,3 +135,21 @@ $enactus_blue: #0397d6;
   }
 }
 
+
+#home_content_container {
+  .row {
+    margin-top: 3.125rem;
+  }
+  .row:last-child {
+    margin-bottom: 3.125rem;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  strong {
+    font-weight: 400;
+    color: $enactus_gold;
+  }
+}
+
