@@ -18,11 +18,72 @@ $enactus_blue: #0397d6;
   transition: $transition-property $transition-length $transition-function;
 }
 
+// BEGIN Base Header Image Styles
+@mixin header_image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 31.25rem;
+}
+
+.header_image_children {
+
+  .row {
+    position: relative;
+    z-index: 20;
+    margin-top: 20rem;
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+      font-weight: 300;
+      font-size: 4.5rem;
+
+      span {
+        font-weight: 400;
+        color: $enactus_gold;
+      }
+    }
+  }
+}
+// END Base Header Image Styles
+
+#project_header_image {
+  background: url(/assets/binghamton_downtown_bg.jpg);
+  @include header_image;
+  @extend .header_image_children;
+  .row {
+    margin-top: 10rem;
+  }
+  .btn {
+    margin-top: 15px
+  }
+}
+
+
+
+.btn {
+  @include transition;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 2px solid $enactus_gold;
+  color: $enactus_gold;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  background-color: $enactus_gold;
+  color: white;
+}
+
 .project_container {
 
   .row {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
     p {
       font-size: 1.5rem !important;
@@ -96,19 +157,5 @@ $enactus_blue: #0397d6;
       margin-top: 0;
       margin-bottom: 0;
     }
-
-    .btn {
-      @include transition;
-      background-color: transparent;
-      border-radius: 3px;
-      border: 2px solid $enactus_gold;
-      color: $enactus_gold;
-    }
-
-    .btn:hover, .btn:active, .btn:focus {
-      background-color: $enactus_gold;
-      color: white;
-    }
-
   }
 }
