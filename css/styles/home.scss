@@ -20,14 +20,14 @@ $enactus_blue: #0397d6;
 }
 
 .header_image {
-  background: url(../assets/binghamton_downtown_bg.jpg);
+  background: url(/assets/binghamton_downtown_bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 40vh;
+  height: 31.25rem;
 }
 
 #projects_container h2 {
