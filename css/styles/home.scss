@@ -51,7 +51,8 @@ $enactus_blue: #0397d6;
   padding-bottom: 3.125rem;
 
   h1 {
-    margin: 0;
+    margin-top: 1.4375rem;
+    margin-bottom: 0;
   }
 }
 
@@ -60,26 +61,46 @@ $enactus_blue: #0397d6;
   .mc-field-group {
     input[type="email"] {
       margin: 0 auto;
+      margin-bottom: 10px;
       background: transparent;
       float: left;
-      width: auto;
+      width: 100%;
       display: inline-block;
       text-align: center;
       border: 0;
-      border-bottom: 5px solid $enactus_darker_gray;
+      border-bottom: 3px solid $enactus_darker_gray;
       font-size: 1.5rem;
       color: $enactus_darker_gray;
+      -webkit-appearance: none;
+    }
+    
+    input[type="email"]::-webkit-input-placeholder {
+      color: $enactus_light_gray;
+    }
+
+    input[type="email"]:-moz-placeholder { /* Firefox 18- */
+      color: $enactus_light_gray;  
+    }
+
+    input[type="email"]::-moz-placeholder {  /* Firefox 19+ */
+      color: $enactus_light_gray;  
+    }
+
+    input[type="email"]:-ms-input-placeholder {  
+      color: $enactus_light_gray;  
     }
 
     input[type="submit"] {
-      float: right;
       @include transition;
+      display: block;
+      width: 100%;
+      padding-top: 5px;
+      padding-bottom: 5px;
       background: transparent;
       color: $enactus_darker_gray;
       border: 2px solid $enactus_darker_gray;
-      font-size: 1.5rem;
-      padding: 10px 40px;
-      border-radius: 29px;
+      font-size: 1rem;
+      border-radius: 3px;
     }
 
     input[type="submit"]:hover,
