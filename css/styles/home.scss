@@ -19,8 +19,8 @@ $enactus_blue: #0397d6;
   transition: $transition-property $transition-length $transition-function;
 }
 
-.header_image {
-  background: url(/assets/binghamton_downtown_bg.jpg);
+// BEGIN Base Header Image Styles
+@mixin header_image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,6 +28,9 @@ $enactus_blue: #0397d6;
   background-repeat: no-repeat;
   background-position: center center;
   height: 31.25rem;
+}
+
+.header_image_children {
 
   .row {
     position: relative;
@@ -52,10 +55,18 @@ $enactus_blue: #0397d6;
     }
   }
 }
+// END Base Header Image Styles
+
+#home_header_image {
+  background: url(/assets/binghamton_downtown_bg.jpg);
+  @include header_image;
+  @extend .header_image_children;
+}
 
 #projects_container h2 {
   margin-top: 0;
 }
+
 #projects_container .col-md-4 {
   padding-left: 0;
   padding-right: 0;
