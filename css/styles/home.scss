@@ -35,7 +35,7 @@ $enactus_blue: #0397d6;
   .row {
     position: relative;
     z-index: 20;
-    margin-top: 20rem;
+    margin-top: 5rem;
     
     h1 {
       margin-top: 0;
@@ -177,3 +177,22 @@ $enactus_blue: #0397d6;
   }
 }
 
+
+@media (min-width: 615px) {
+  .header_image_children {
+
+    .row {
+      margin-top: 10rem;
+    }
+  }
+}
+
+
+@media (min-width: 870px) {
+  .header_image_children {
+
+    .row {
+      margin-top: 20rem;
+    }
+  }
+}
