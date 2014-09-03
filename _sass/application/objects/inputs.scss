@@ -9,6 +9,11 @@
   border: none;
 }
 
+.mc-field-group input[type="email"]:focus {
+  outline-offset: 0;
+  outline: none;
+}
+
 .clear input[type="submit"] {
   width: 302px;
   background-color: #1abc9c;
@@ -24,4 +29,13 @@
 // Defaults for Inputs
 textarea {
   resize: none !important;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: none !important;
+  padding: 0;
 }

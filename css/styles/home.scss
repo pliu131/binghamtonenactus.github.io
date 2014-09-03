@@ -110,6 +110,10 @@ $enactus_blue: #0397d6;
       color: $enactus_darker_gray;
       -webkit-appearance: none;
     }
+
+    input[type="email"]:focus {
+      outline: none;
+    }
     
     input[type="email"]::-webkit-input-placeholder {
       color: $enactus_light_gray;

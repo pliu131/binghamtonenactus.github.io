@@ -1,0 +1,1 @@
+I am a junior majoring in accounting and concentrating in leadership.  This will be my second year as project leader of strategic consulting and third year in the club. I am in sigma delta tau as well.

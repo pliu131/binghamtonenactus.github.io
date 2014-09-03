@@ -1,0 +1,1 @@
+My name is James. I am currently a junior and computer science major in the Watson School. About a year and a half ago, I joined Coins for Change, one of the many Enactus projects, and since then I have helped the team fundraise for the Maasai tribe in Eastern Africa. Now as the CIO of Enactus, I hope to be able to take on a much larger role in the group.
